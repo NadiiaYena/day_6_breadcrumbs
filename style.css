@@ -1,8 +1,123 @@
-body{
+html, body{
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 height: 100%;
-width: 100%;
-display: flex;
-background-color: black;
 }
 
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+
+}
+.container{
+    /* min-height: 150px; */
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1030px;
+}
+.footer{
+    width: 100%;
+    /* min-height: 150px; */
+    max-width: 1030px;
+   /* min-width: 150px; */
+    background-color: grey;
+}
+.img{
+    max-width: 1030px;
+    margin: 0 auto;
+   
+}
+.menu {
+    /* max-width: 1030px; */
+    margin: 0 auto;
+    padding: 15px 15px;
+    border-color: black;
+}
+
+.breadcrumb {
+    padding: 0 15px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "/";
+}
+.overview{
+    padding-left: 30px;
+}
+
+.breadcrumb a:hover {
+    background-color: rgb(172, 170, 170);
+    padding: 5px;
+    border-radius: 3px;
+}
+.discr span{
+    font-size: 20px;
+    display: block;
+    height: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.discr div {
+    padding-left: 15px;
+    margin: 0 auto;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border-color:   red;
+    color: red;
+}
+.over:hover{
+    background-color: rgb(172, 170, 170);
+   
+}
+.discr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(193, 253, 255);
+}
+.imgItem img{
+    height: 250px;
+    border-color: gray;
+    border: 1px;
+}
+.imgItem{
+    height: 250px;
+    border-color: gray;
+    border: 1px;
+}
+.item{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
